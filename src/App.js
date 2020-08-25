@@ -33,15 +33,15 @@ class App extends Component {
       <div className="App">
         <h1>Dice Roll Demo</h1>
         <div className="buttons">
-          {[1, 2, 3, 4, 5].map(number => {
-            let text = number === 1 ? "die" : "dice";
+          {[4, 6, 8, 10, 12, 20].map(number => {
+            let text = "D";
             return (
               <button
                 key={number}
                 onClick={() => this.diceRoll(number)}
                 className="button"
               >
-                {number} {text}
+                {text} {number}
               </button>
             );
           })}
