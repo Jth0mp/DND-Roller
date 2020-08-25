@@ -6,6 +6,8 @@ import three from "./assets/three.png";
 import four from "./assets/four.png";
 import five from "./assets/five.png";
 import six from "./assets/six.png";
+import d20 from "./assets/seven.jpg";
+
 
 class App extends Component {
   
@@ -76,7 +78,7 @@ const DiceImage = ({ roll }) => {
   } else if (roll === 5) {
     return <img className="dice-image" src={five} alt="5" />;
   } else if (roll === 6) {
-    return <img className="dice-image" src={six} alt="6" />;
+    return <img className="dice-image" src={d20} alt="6" />;
   }
 };
 
